@@ -1,5 +1,5 @@
 {
-  "name": "@amir-s/datepicker-showcase",
+  "name": "@amirs/datepicker-showcase",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@amir-s/datepicker": "*",
+    "@amirs/datepicker": "*",
     "class-variance-authority": "^0.7.1",
     "lucide-react": "^1.24.0",
     "radix-ui": "^1.6.2",

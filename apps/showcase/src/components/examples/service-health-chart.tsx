@@ -2,7 +2,7 @@ import {
   fromDayOrdinal,
   toDayOrdinal,
   type TimelineChartContext,
-} from "@amir-s/datepicker"
+} from "@amirs/datepicker"
 
 const SERVICES = [
   { id: "api", color: "var(--chart-1)", seed: 3 },

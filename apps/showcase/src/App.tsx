@@ -21,7 +21,7 @@ import {
   type DateRange,
   type TimelineChartContext,
   type ZoomMode,
-} from "@amir-s/datepicker"
+} from "@amirs/datepicker"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -61,10 +61,10 @@ const INITIAL_VIEWPORT: DateRange = {
   to: new Date(2026, 6, 10),
 }
 
-const INSTALL_COMMAND = "npm install @amir-s/datepicker"
+const INSTALL_COMMAND = "npm install @amirs/datepicker"
 
-const CODE_SAMPLE = `import { TimelineDateRangePicker } from "@amir-s/datepicker"
-import "@amir-s/datepicker/styles.css"
+const CODE_SAMPLE = `import { TimelineDateRangePicker } from "@amirs/datepicker"
+import "@amirs/datepicker/styles.css"
 
 <TimelineDateRangePicker
   value={range}

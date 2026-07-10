@@ -1,5 +1,5 @@
 {
-  "name": "@amir-s/datepicker-workspace",
+  "name": "@amirs/datepicker-workspace",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,8 +9,8 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspace @amir-s/datepicker-showcase",
-    "build": "npm run build --workspace @amir-s/datepicker && npm run build --workspace @amir-s/datepicker-showcase",
+    "dev": "npm run dev --workspace @amirs/datepicker-showcase",
+    "build": "npm run build --workspace @amirs/datepicker && npm run build --workspace @amirs/datepicker-showcase",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "lint": "eslint .",
     "test": "vitest run",

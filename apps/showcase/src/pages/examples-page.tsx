@@ -19,7 +19,7 @@ import {
   type TimelineRangeHandleProps,
   type TimelineSelectionLabelProps,
   type ZoomLevel,
-} from "@amir-s/datepicker"
+} from "@amirs/datepicker"
 
 import { ServiceHealthChart } from "@/components/examples/service-health-chart"
 import { StackedRevenueChart } from "@/components/examples/stacked-revenue-chart"

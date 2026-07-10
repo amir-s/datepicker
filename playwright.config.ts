@@ -15,7 +15,7 @@ export default defineConfig({
     { name: "mobile-webkit", use: { ...devices["iPhone 13"] } },
   ],
   webServer: {
-    command: "npm run build && npm run preview --workspace @amir-s/datepicker-showcase -- --host 127.0.0.1",
+    command: "npm run build && npm run preview --workspace @amirs/datepicker-showcase -- --host 127.0.0.1",
     port: 4173,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

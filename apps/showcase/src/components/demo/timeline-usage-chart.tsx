@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import type { TimelineChartContext } from "@amir-s/datepicker"
+import type { TimelineChartContext } from "@amirs/datepicker"
 
 const MS_PER_DAY = 86_400_000
 

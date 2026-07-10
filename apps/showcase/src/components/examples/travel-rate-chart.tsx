@@ -3,7 +3,7 @@ import {
   fromDayOrdinal,
   toDayOrdinal,
   type TimelineChartContext,
-} from "@amir-s/datepicker"
+} from "@amirs/datepicker"
 
 const ZOOM_BUCKET_DAYS: Record<string, number> = {
   "two-weeks": 1,

@@ -1,4 +1,4 @@
-# @amir-s/datepicker
+# @amirs/datepicker
 
 An adaptive, chart-ready timeline date range picker for React. It combines a
 draggable day-snapped selection, responsive date labels, presets, adaptive
@@ -26,7 +26,7 @@ with a public API designed for controlled product surfaces and custom charts.
 ## Install
 
 ```bash
-npm install @amir-s/datepicker
+npm install @amirs/datepicker
 ```
 
 Import the component and its scoped stylesheet once in your application:
@@ -35,8 +35,8 @@ Import the component and its scoped stylesheet once in your application:
 import {
   TimelineDateRangePicker,
   type DatePreset,
-} from "@amir-s/datepicker"
-import "@amir-s/datepicker/styles.css"
+} from "@amirs/datepicker"
+import "@amirs/datepicker/styles.css"
 
 const day = (year: number, month: number, date: number) =>
   new Date(year, month - 1, date)

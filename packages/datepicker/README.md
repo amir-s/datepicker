@@ -1,4 +1,4 @@
-# @amir-s/datepicker
+# @amirs/datepicker
 
 A shadcn-compatible React timeline date range picker with presets, responsive
 ticks, adaptive zoom, chart composition, and an accessible calendar fallback.
@@ -6,7 +6,7 @@ ticks, adaptive zoom, chart composition, and an accessible calendar fallback.
 ## Installation
 
 ```bash
-npm install @amir-s/datepicker
+npm install @amirs/datepicker
 ```
 
 React and React DOM are peer dependencies. React 18.2+ and React 19 are
@@ -16,8 +16,8 @@ supported.
 import {
   TimelineDateRangePicker,
   type DatePreset,
-} from "@amir-s/datepicker"
-import "@amir-s/datepicker/styles.css"
+} from "@amirs/datepicker"
+import "@amirs/datepicker/styles.css"
 
 const presets: DatePreset[] = [
   {
@@ -62,8 +62,8 @@ import * as React from "react"
 import {
   TimelineDateRangePicker,
   type DateRange,
-} from "@amir-s/datepicker"
-import "@amir-s/datepicker/styles.css"
+} from "@amirs/datepicker"
+import "@amirs/datepicker/styles.css"
 
 export function ControlledRange() {
   const [value, setValue] = React.useState<DateRange>({
@@ -185,7 +185,7 @@ type TimelineChartContext = {
 
 ## Styling and shadcn compatibility
 
-Import `@amir-s/datepicker/styles.css` once. All selectors are scoped to the
+Import `@amirs/datepicker/styles.css` once. All selectors are scoped to the
 component and consume shadcn semantic variables such as `--card`,
 `--card-foreground`, `--popover`, `--primary`, `--border`, `--muted`, and
 `--ring`, with fallback values for apps that do not define them.

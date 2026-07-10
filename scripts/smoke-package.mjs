@@ -9,6 +9,10 @@ import { fileURLToPath } from "node:url"
 
 const rootDirectory = resolve(dirname(fileURLToPath(import.meta.url)), "..")
 const packageDirectory = join(rootDirectory, "packages", "datepicker")
+const packageManifest = JSON.parse(
+  await readFile(join(packageDirectory, "package.json"), "utf8"),
+)
+const packageName = packageManifest.name
 const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm"
 const tscBin = join(rootDirectory, "node_modules", "typescript", "bin", "tsc")
 const viteBin = join(rootDirectory, "node_modules", "vite", "bin", "vite.js")
@@ -48,7 +52,7 @@ function assertBuildExists() {
 
   if (missing.length > 0) {
     throw new Error(
-      `Package build is incomplete (${missing.join(", ")}). Run \`npm run build --workspace @amir-s/datepicker\` first.`,
+      `Package build is incomplete (${missing.join(", ")}). Run \`npm run build --workspace ${packageName}\` first.`,
     )
   }
 }
@@ -105,8 +109,8 @@ import { createRoot } from "react-dom/client"
 import {
   TimelineDateRangePicker,
   type TimelineDateRangePickerProps,
-} from "@amir-s/datepicker"
-import "@amir-s/datepicker/styles.css"
+} from "${packageName}"
+import "${packageName}/styles.css"
 
 const today = new Date(2026, 6, 10)
 const props = {
@@ -132,7 +136,7 @@ createRoot(container).render(
   )
   await writeFile(
     join(fixtureDirectory, "verify-cjs.cjs"),
-    `const library = require("@amir-s/datepicker")
+    `const library = require("${packageName}")
 
 if (typeof library.TimelineDateRangePicker !== "function") {
   throw new TypeError("CommonJS export TimelineDateRangePicker is missing")

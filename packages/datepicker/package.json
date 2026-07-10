@@ -1,5 +1,5 @@
 {
-  "name": "@amir-s/datepicker",
+  "name": "@amirs/datepicker",
   "version": "0.1.0",
   "description": "An adaptive, chart-ready timeline date range picker for React and shadcn/ui.",
   "license": "MIT",

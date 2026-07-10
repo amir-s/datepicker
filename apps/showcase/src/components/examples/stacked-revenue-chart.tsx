@@ -4,7 +4,7 @@ import {
   fromDayOrdinal,
   toDayOrdinal,
   type TimelineChartContext,
-} from "@amir-s/datepicker"
+} from "@amirs/datepicker"
 
 import {
   ChartContainer,
