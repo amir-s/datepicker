@@ -1,7 +1,11 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "paths": { "@/*": ["./src/*"] }
+    "paths": {
+      "@/*": ["./src/*"],
+      "@amirs/datepicker": ["../../packages/datepicker/src/index.ts"]
+    },
+    "types": ["node"]
   },
   "include": ["src", "vite.config.ts"]
 }
