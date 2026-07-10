@@ -247,6 +247,27 @@ function HomePage() {
               A chart-ready React date range picker with intelligent zoom,
               natural gestures, and the composability of shadcn/ui.
             </p>
+            <p className="mt-3 text-sm text-muted-foreground">
+              Inspired by the original{" "}
+              <a
+                href="https://rangeflow.raminmousavi.dev/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
+              >
+                RangeFlow
+              </a>{" "}
+              project by{" "}
+              <a
+                href="https://raminmousavi.dev/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
+              >
+                Ramin Mousavi
+              </a>{" "}
+              · Designed and built with AI assistance
+            </p>
             <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
               <Button size="lg" asChild>
                 <a href="#demo">

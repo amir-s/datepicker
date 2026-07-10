@@ -3,6 +3,17 @@
 A shadcn-compatible React timeline date range picker with presets, responsive
 ticks, adaptive zoom, chart composition, and an accessible calendar fallback.
 
+## Inspiration and disclosure
+
+This is an independent implementation inspired by the original
+[RangeFlow](https://rangeflow.raminmousavi.dev/) timeline range picker created
+by [Ramin Mousavi](https://raminmousavi.dev/). RangeFlow's compact combination
+of a draggable selection, quick ranges, and a calendar established the core
+interaction direction; this library extends it with responsive ticks, adaptive
+and fixed zoom, controlled viewports, chart composition, and shadcn semantics.
+
+This project was designed and built with AI assistance.
+
 ## Installation
 
 ```bash

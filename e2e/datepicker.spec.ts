@@ -50,6 +50,11 @@ test("renders the showcase and exposes the accessible picker surface", async ({
     page.getByRole("heading", { name: "Designed for real product surfaces" }),
   ).toBeAttached()
   await expect(page.getByText("Start building", { exact: true })).toBeAttached()
+  await expect(page.getByRole("link", { name: "RangeFlow" })).toHaveAttribute(
+    "href",
+    "https://rangeflow.raminmousavi.dev/",
+  )
+  await expect(page.getByText(/designed and built with AI assistance/i)).toBeVisible()
 
   await expect(pickerRoot(page)).toHaveAttribute("data-zoom-level", "six-weeks")
   await expect(pickerSlot(page, "date-trigger")).toBeVisible()
