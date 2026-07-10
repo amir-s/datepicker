@@ -1,0 +1,66 @@
+{
+  "name": "@amir-s/datepicker",
+  "version": "0.1.0",
+  "description": "An adaptive, chart-ready timeline date range picker for React and shadcn/ui.",
+  "license": "MIT",
+  "homepage": "https://github.com/amir-s/datepicker#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amir-s/datepicker.git",
+    "directory": "packages/datepicker"
+  },
+  "bugs": {
+    "url": "https://github.com/amir-s/datepicker/issues"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "datepicker",
+    "date-range",
+    "timeline",
+    "shadcn",
+    "radix-ui"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/datepicker.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.19",
+    "@radix-ui/react-popover": "^1.1.19",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.4.0",
+    "lucide-react": "^1.24.0",
+    "react-day-picker": "^10.0.1",
+    "tailwind-merge": "^3.6.0"
+  }
+}
