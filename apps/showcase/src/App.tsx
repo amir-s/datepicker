@@ -257,15 +257,6 @@ function HomePage() {
               >
                 RangeFlow
               </a>{" "}
-              project by{" "}
-              <a
-                href="https://raminmousavi.dev/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
-              >
-                Ramin Mousavi
-              </a>{" "}
               · Designed and built with AI assistance
             </p>
             <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
