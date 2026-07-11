@@ -829,6 +829,10 @@
     width: 100%;
   }
 
+  .tdp-calendar .rdp-months {
+    margin-inline: auto;
+  }
+
   .tdp-calendar .rdp-month,
   .tdp-calendar .rdp-month_grid {
     width: 100%;

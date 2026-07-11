@@ -244,6 +244,32 @@ test("mobile uses touch-sized controls and a one-month modal sheet", async (
   await expect(page.getByTestId("committed-range")).not.toHaveText(before ?? "")
 })
 
+test("mobile sheet centers the calendar at the upper mobile breakpoint", async (
+  { page },
+  testInfo,
+) => {
+  test.skip(testInfo.project.name !== "mobile-webkit", "Mobile-only behavior")
+
+  await page.setViewportSize({ width: 606, height: 859 })
+  await page.reload()
+  await expect(pickerRoot(page)).toBeVisible()
+
+  await pickerSlot(page, "date-trigger").click()
+  const dialog = page.getByRole("dialog", { name: "Choose a date range" })
+  await expect(dialog).toBeVisible()
+  await waitForAnimations(dialog)
+
+  const calendar = dialog.locator('[data-slot="calendar"]')
+  const month = calendar.locator(".rdp-months")
+  const calendarBox = await calendar.boundingBox()
+  const monthBox = await month.boundingBox()
+  if (!calendarBox || !monthBox) throw new Error("Expected a visible mobile calendar")
+
+  const leftInset = monthBox.x - calendarBox.x
+  const rightInset = calendarBox.x + calendarBox.width - monthBox.x - monthBox.width
+  expect(Math.abs(leftInset - rightInset)).toBeLessThanOrEqual(1)
+})
+
 test("the examples page composes charts, viewport modes, and scoped styles", async ({
   page,
 }) => {
