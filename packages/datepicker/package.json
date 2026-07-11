@@ -1,6 +1,6 @@
 {
   "name": "@amirs/datepicker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An adaptive, chart-ready timeline date range picker for React and shadcn/ui.",
   "license": "MIT",
   "homepage": "https://github.com/amir-s/datepicker#readme",
